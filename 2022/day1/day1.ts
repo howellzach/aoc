@@ -1,7 +1,7 @@
 import * as fs from "fs";
 
 const data = fs.readFileSync('input.txt', 'utf-8');
-const dataSplit: Array<String> = data.split('\n')
+const dataSplit: Array<string> = data.split('\n')
 
 let elves = []
 let elfCal = 0
