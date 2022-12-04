@@ -3,13 +3,13 @@ import * as fs from "fs"
 const data = fs.readFileSync('input.txt', 'utf-8')
 const dataSplit: Array<string> = data.split('\n')
 
-function makeRucks(data: Array<String>) : Array<Object> {
+function makeRucks(data: Array<String>): Array<Object> {
     let rucksacks = []
-    for (let i of data) { 
+    for (let i of data) {
         rucksacks.push({
             "bothCom": i,
-            "com1": i.slice(0, (i.length/2)),
-            "com2": i.slice(-(i.length/2)),
+            "com1": i.slice(0, (i.length / 2)),
+            "com2": i.slice(-(i.length / 2)),
         })
     }
     for (let i of rucksacks) {
@@ -27,7 +27,7 @@ function makeRucks(data: Array<String>) : Array<Object> {
     return rucksacks
 }
 
-function getPriority(item: string) : Number {
+function getPriority(item: string): Number {
     const priority = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     return priority.indexOf(item) + 1
 }
@@ -73,11 +73,11 @@ function findBadges(group: Array<Array<Object>>) {
 
 let rucksacks = makeRucks(dataSplit)
 let pt1Res = 0
-rucksacks.forEach(i => {pt1Res = pt1Res + i["repPriority"]})
+rucksacks.forEach(i => { pt1Res = pt1Res + i["repPriority"] })
 console.log("Part 1 result: %s", pt1Res)
 
 let groupedElves = groupElves(rucksacks, 3)
 findBadges(groupedElves)
 let pt2Res = 0
-groupedElves.forEach(i => {pt2Res = pt2Res + i[0]['badgePriority']})
+groupedElves.forEach(i => { pt2Res = pt2Res + i[0]['badgePriority'] })
 console.log("Part 2 result: %s", pt2Res)

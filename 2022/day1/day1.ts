@@ -28,7 +28,7 @@ console.log("Result 1: %d", mostElf)
 function getTopElvesCal(n: number) {
     const sortedElves = elves.sort((a, b) => b - a)
     let topElvesCal = 0
-    for (let i = 0; i <= n-1; i++) {
+    for (let i = 0; i <= n - 1; i++) {
         topElvesCal = topElvesCal + sortedElves[i]
     }
     return topElvesCal

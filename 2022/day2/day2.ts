@@ -20,7 +20,7 @@ const scoring = {
     "Tie": 3
 }
 
-function pt1Convert(input: Array<String>) : Array<String> {
+function pt1Convert(input: Array<String>): Array<String> {
     let outArray = []
     var o: String
     for (let i of input) {
@@ -37,7 +37,7 @@ function pt1Convert(input: Array<String>) : Array<String> {
     return outArray
 }
 
-function calcScores(input: Array<String>) : Array<Number> {
+function calcScores(input: Array<String>): Array<Number> {
     let myScore = 0
     let opScore = 0
     for (let i of input) {
@@ -63,7 +63,7 @@ function calcScores(input: Array<String>) : Array<Number> {
     return [myScore, opScore]
 }
 
-function decryptStrat(input: Array<String>) : Array<String> {
+function decryptStrat(input: Array<String>): Array<String> {
     let outArray = []
     var o: String
     for (let i of input) {
