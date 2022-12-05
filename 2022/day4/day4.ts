@@ -31,8 +31,7 @@ function sectionContainsEvery(s1: Array<number>, s2: Array<number>) {
 
 function sectionContainsSome(s1: Array<number>, s2: Array<number>) {
     let check1: boolean = s2.some(v => s1.includes(v))
-    let check2: boolean = s1.some(v => s2.includes(v))
-    if (check1 || check2) {
+    if (check1) {
         return true
     } else {
         return false
