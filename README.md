@@ -16,3 +16,6 @@ I'm using this as an opportunity to learn more about coding generally and to try
 
 - 2023: Rust
   - Trying out Rust and seeing just how hard it is to learn. 
+
+- 2024: Ruby
+  - Continuing the December hobby of not finishing AOC, but learning a new language
